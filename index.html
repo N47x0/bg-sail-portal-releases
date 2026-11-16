@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Logger app</title>
+<style>
+  :root { color-scheme: light dark; --bg:#fff; --fg:#111; --muted:#444; --btn:#0b5cad; --btnfg:#fff; --line:#ccc; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#f2f2f2; --muted:#bbb; --btn:#5aa9f0; --btnfg:#000; --line:#444; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:18px/1.5 system-ui, sans-serif; }
+  main { max-width: 34rem; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.3rem; margin-top: 2rem; } h3 { font-size: 1.1rem; }
+  .btn { display:block; text-align:center; background:var(--btn); color:var(--btnfg); padding: 16px; border-radius: 10px; font-weight:700; text-decoration:none; margin: 16px 0; }
+  .notes { border-left: 4px solid var(--line); padding-left: 12px; color: var(--muted); }
+  .qr { max-width: 14rem; } .qr svg { width:100%; height:auto; display:block; }
+  li { margin: .4rem 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>bg-sail-portal: the logger app</h1>
+<p>Version 0.8.3, published 2026-11-15.</p>
+<a class="btn" href="https://n47x0.github.io/bg-sail-portal-releases/apk/bgsail-0.8.3.apk">Download the app (14.9 MB)</a>
+<p class="notes">0.8.3<br><br>- Backups to GitHub work on the phone (they stopped with &quot;getFileStore&quot;).<br>- The phone&#x27;s free disk space shows correctly.<br>- The backup problem line no longer says &quot;Problem:&quot; twice, and a missed weekly copy reads &quot;due now&quot;.</p>
+<p><strong>Open this page on the logger phone.</strong> On a computer? Scan this code with the phone's camera:</p>
+<div class="qr" role="img" aria-label="QR code of this page"><svg width="328" height="328" class="segno"><g transform="scale(8)"><path fill="#fff" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#000" d="M4 4.5h7m1 0h3m1 0h1m3 0h1m1 0h4m1 0h2m1 0h7m-33 1h1m5 0h1m1 0h1m1 0h3m1 0h1m1 0h2m2 0h2m1 0h1m2 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m4 0h4m1 0h1m1 0h1m1 0h1m5 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h2m2 0h1m2 0h2m2 0h1m3 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m3 0h1m1 0h2m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m4 0h1m1 0h1m1 0h2m4 0h1m2 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h3m1 0h1m2 0h5m3 0h1m-24 1h1m1 0h2m1 0h3m1 0h4m1 0h5m2 0h1m2 0h1m1 0h1m2 0h1m1 0h2m-30 1h2m5 0h2m1 0h1m2 0h4m1 0h1m1 0h2m1 0h2m1 0h2m1 0h1m-31 1h1m1 0h7m1 0h2m2 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h3m1 0h2m-32 1h3m1 0h1m2 0h1m3 0h1m2 0h3m9 0h1m1 0h1m1 0h1m-31 1h1m2 0h3m1 0h4m2 0h3m3 0h1m1 0h4m1 0h3m-30 1h4m3 0h4m2 0h2m5 0h1m1 0h1m1 0h2m4 0h2m-32 1h4m1 0h2m2 0h1m4 0h1m2 0h5m2 0h1m1 0h1m1 0h3m-31 1h4m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m5 0h2m2 0h2m1 0h3m-31 1h3m1 0h5m3 0h3m1 0h1m3 0h7m1 0h1m1 0h1m-30 1h1m2 0h2m1 0h1m1 0h3m1 0h1m1 0h1m4 0h1m1 0h5m1 0h2m2 0h1m-33 1h1m3 0h4m1 0h1m1 0h2m2 0h2m1 0h1m1 0h1m6 0h2m1 0h2m-32 1h3m1 0h1m2 0h2m4 0h2m1 0h3m3 0h1m1 0h1m3 0h1m2 0h2m-32 1h1m1 0h7m1 0h1m3 0h2m2 0h1m1 0h2m6 0h2m1 0h1m-33 1h1m3 0h2m4 0h2m3 0h3m2 0h1m2 0h1m2 0h1m3 0h1m1 0h1m-31 1h2m1 0h4m2 0h1m2 0h2m2 0h3m2 0h1m1 0h1m1 0h1m1 0h4m-32 1h1m1 0h3m2 0h1m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m3 0h3m1 0h2m1 0h1m-32 1h1m3 0h3m3 0h2m1 0h1m3 0h1m1 0h2m1 0h8m-22 1h1m2 0h1m2 0h2m3 0h1m1 0h2m1 0h1m3 0h2m-30 1h7m1 0h2m2 0h1m4 0h3m1 0h1m1 0h2m1 0h1m1 0h1m2 0h1m-32 1h1m5 0h1m1 0h4m4 0h3m2 0h2m1 0h1m3 0h3m-31 1h1m1 0h3m1 0h1m5 0h1m1 0h1m1 0h5m2 0h6m1 0h2m-32 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h2m1 0h1m2 0h1m2 0h1m2 0h1m1 0h1m1 0h1m2 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h4m2 0h7m2 0h1m-31 1h1m5 0h1m2 0h1m2 0h1m4 0h1m2 0h1m2 0h6m3 0h1m-33 1h7m1 0h3m2 0h2m1 0h4m1 0h1m1 0h1m4 0h1m1 0h1"/></g></svg></div>
+
+<h2>Install (about 5 minutes, once)</h2>
+<ol>
+<li>Tap <strong>Download the app</strong>. If Chrome says the file might be harmful, tap <strong>Download anyway</strong>.</li>
+<li>When the download finishes, tap <strong>Open</strong>. (Or open <strong>My Files</strong>, then <strong>Downloads</strong>, and tap the file.)</li>
+<li>If the phone says it is "not allowed to install unknown apps from this source", tap <strong>Settings</strong>, turn on <strong>Allow from this source</strong>, then go back.</li>
+<li>Tap <strong>Install</strong>. If Google Play Protect asks, tap <strong>More details</strong>, then <strong>Install anyway</strong>. If the phone says the app was blocked by <strong>Auto Blocker</strong>, open <strong>Settings &gt; Security and privacy &gt; Auto Blocker</strong>, turn it off, and start again at step 2.</li>
+<li>Tap <strong>Open</strong>. The logger's setup screen appears. Tap each button that is not yet green:
+  <ul>
+  <li><strong>Allow notifications</strong></li>
+  <li><strong>Let the logger run all the time</strong></li>
+  <li><strong>Let the logger update itself</strong> (turn on <strong>Allow from this source</strong>, then go back)</li>
+  </ul></li>
+<li>Join the boat's instrument WiFi and follow the setup steps on the screen.</li>
+</ol>
+<p>You only do this once. <strong>The app updates itself</strong> when the phone has internet. You never need to come back here, unless you set up a new phone.</p>
+
+<h2>Replacing a broken or lost logger phone</h2>
+<ol>
+<li>On the new phone: turn on the battery protection (charge limit) in <strong>Settings &gt; Battery</strong>, and do <strong>not</strong> set a screen lock.</li>
+<li>Install the app as above.</li>
+<li>Open the app, join the boat's WiFi, and run the setup steps.</li>
+</ol>
+<p>The new phone starts recording on its own. Recordings that were only on the old phone are not on the new one; copies backed up from the old phone's <strong>Documents/bg-sail-portal</strong> folder are kept.</p>
+
+<h2>Something wrong?</h2>
+<p>Send a photo of the logger app's screen to the person who set it up for you.</p>
+<h3>Older versions</h3><p>Only if you were asked to.</p><ul><li><a href="apk/bgsail-0.8.2.apk">0.8.2</a></li><li><a href="apk/bgsail-0.8.1.apk">0.8.1</a></li></ul>
+</main>
+</body>
+</html>

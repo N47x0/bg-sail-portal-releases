@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "application_id": "io.github.n47x0.bgsail",
+  "version_code": 8003,
+  "version_name": "0.8.3",
+  "git_sha": "14bb40d9b123167a223de4cd2b2f727b549462f9",
+  "apk_url": "https://n47x0.github.io/bg-sail-portal-releases/apk/bgsail-0.8.3.apk",
+  "apk_sha256": "f62479590bbb3198f8ac5c192f453253d38831e01011481c66124c30f415cf17",
+  "apk_size": 15586682,
+  "min_sdk": 29,
+  "published_at": "2026-11-15T23:59:58Z",
+  "notes": "0.8.3\n\n- Backups to GitHub work on the phone (they stopped with \"getFileStore\").\n- The phone's free disk space shows correctly.\n- The backup problem line no longer says \"Problem:\" twice, and a missed weekly copy reads \"due now\".",
+  "signing_cert_sha256": "45cd08b01162ea50ab704acf1e2536db4b1f6f889ddd04ec4602bffc673cc0af"
+}
